@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+.closet-item {
+  @apply cursor-move shadow-md rounded-md overflow-hidden transition-transform hover:scale-105;
+}
+
+.canvas-item {
+  @apply absolute cursor-move shadow-md rounded-md overflow-hidden;
+}
+
+.category-tab {
+  @apply px-4 py-2 font-medium rounded-t-lg transition-colors;
+}
+
+.category-tab.active {
+  @apply bg-white text-primary-600 border-t border-l border-r border-gray-200;
+}
+
+.category-tab:not(.active) {
+  @apply bg-gray-100 text-gray-600 hover:bg-gray-200;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply bg-primary-600 text-white hover:bg-primary-700;
+}
+
+.btn-outline {
+  @apply border border-primary-600 text-primary-600 hover:bg-primary-50;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
